@@ -9,11 +9,11 @@
  */
 #include <functional>
 
-#include <absl/meta/type_traits.h>
+#include "absl/meta/type_traits.h"
 #include <gtest/gtest.h>
-#include <prjxray/bit_ops.h>
-#include <prjxray/xilinx/architectures.h>
-#include <prjxray/xilinx/configuration_packet.h>
+#include "prjxray/bit_ops.h"
+#include "prjxray/xilinx/architectures.h"
+#include "prjxray/xilinx/configuration_packet.h"
 
 using namespace prjxray::xilinx;
 

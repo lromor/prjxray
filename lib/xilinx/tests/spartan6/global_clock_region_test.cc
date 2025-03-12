@@ -7,7 +7,7 @@
  *
  * SPDX-License-Identifier: ISC
  */
-#include <prjxray/xilinx/spartan6/global_clock_region.h>
+#include "prjxray/xilinx/spartan6/global_clock_region.h"
 
 #include <gtest/gtest.h>
 

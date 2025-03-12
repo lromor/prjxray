@@ -13,11 +13,11 @@
 #include <map>
 #include <type_traits>
 
-#include <absl/types/span.h>
+#include "absl/types/span.h"
 
-#include <prjxray/bit_ops.h>
-#include <prjxray/xilinx/architectures.h>
-#include <prjxray/xilinx/frames.h>
+#include "prjxray/bit_ops.h"
+#include "prjxray/xilinx/architectures.h"
+#include "prjxray/xilinx/frames.h"
 
 namespace prjxray {
 namespace xilinx {

@@ -12,10 +12,10 @@
 
 #include <memory>
 
-#include <absl/types/span.h>
-#include <prjxray/bit_ops.h>
-#include <prjxray/xilinx/configuration_packet.h>
-#include <prjxray/xilinx/configuration_register.h>
+#include "absl/types/span.h"
+#include "prjxray/bit_ops.h"
+#include "prjxray/xilinx/configuration_packet.h"
+#include "prjxray/xilinx/configuration_register.h"
 
 namespace prjxray {
 namespace xilinx {

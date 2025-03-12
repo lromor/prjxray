@@ -10,8 +10,8 @@
 #ifndef PRJXRAY_LIB_XILINX_NOP_PACKET_H
 #define PRJXRAY_LIB_XILINX_NOP_PACKET_H
 
-#include <prjxray/xilinx/configuration_packet.h>
-#include <prjxray/xilinx/configuration_register.h>
+#include "prjxray/xilinx/configuration_packet.h"
+#include "prjxray/xilinx/configuration_register.h"
 
 namespace prjxray {
 namespace xilinx {

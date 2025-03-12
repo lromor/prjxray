@@ -7,7 +7,7 @@
  *
  * SPDX-License-Identifier: ISC
  */
-#include <prjxray/memory_mapped_file.h>
+#include "prjxray/memory_mapped_file.h"
 
 #include <fcntl.h>
 #include <sys/mman.h>

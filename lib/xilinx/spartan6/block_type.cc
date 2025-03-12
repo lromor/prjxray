@@ -7,7 +7,7 @@
  *
  * SPDX-License-Identifier: ISC
  */
-#include <prjxray/xilinx/spartan6/block_type.h>
+#include "prjxray/xilinx/spartan6/block_type.h"
 
 namespace prjxray {
 namespace xilinx {

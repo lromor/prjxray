@@ -7,7 +7,7 @@
  *
  * SPDX-License-Identifier: ISC
  */
-#include <prjxray/xilinx/xc7series/global_clock_region.h>
+#include "prjxray/xilinx/xc7series/global_clock_region.h"
 
 namespace prjxray {
 namespace xilinx {

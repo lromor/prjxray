@@ -7,7 +7,7 @@
  *
  * SPDX-License-Identifier: ISC
  */
-#include <prjxray/xilinx/configuration_register.h>
+#include "prjxray/xilinx/configuration_register.h"
 
 namespace prjxray {
 namespace xilinx {

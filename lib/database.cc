@@ -7,13 +7,13 @@
  *
  * SPDX-License-Identifier: ISC
  */
-#include <prjxray/database.h>
+#include "prjxray/database.h"
 
 #include <glob.h>
 
 #include <memory>
 
-#include <absl/strings/str_cat.h>
+#include "absl/strings/str_cat.h"
 
 namespace prjxray {
 

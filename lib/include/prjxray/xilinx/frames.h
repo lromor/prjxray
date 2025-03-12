@@ -16,8 +16,8 @@
 #include <string>
 #include <vector>
 
-#include <absl/strings/str_split.h>
-#include <prjxray/xilinx/architectures.h>
+#include "absl/strings/str_split.h"
+#include "prjxray/xilinx/architectures.h"
 
 namespace prjxray {
 namespace xilinx {

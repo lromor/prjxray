@@ -13,9 +13,9 @@
 #include <cstdint>
 #include <ostream>
 
-#include <absl/types/optional.h>
-#include <absl/types/span.h>
-#include <prjxray/xilinx/configuration_register.h>
+#include "absl/types/optional.h"
+#include "absl/types/span.h"
+#include "prjxray/xilinx/configuration_register.h"
 
 namespace prjxray {
 namespace xilinx {

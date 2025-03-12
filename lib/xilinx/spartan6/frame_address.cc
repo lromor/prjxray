@@ -9,8 +9,8 @@
  */
 #include <iomanip>
 
-#include <prjxray/bit_ops.h>
-#include <prjxray/xilinx/spartan6/frame_address.h>
+#include "prjxray/bit_ops.h"
+#include "prjxray/xilinx/spartan6/frame_address.h"
 
 namespace prjxray {
 namespace xilinx {

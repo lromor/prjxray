@@ -7,7 +7,7 @@
  *
  * SPDX-License-Identifier: ISC
  */
-#include <prjxray/xilinx/spartan6/configuration_column.h>
+#include "prjxray/xilinx/spartan6/configuration_column.h"
 
 namespace prjxray {
 namespace xilinx {

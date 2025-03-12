@@ -10,19 +10,19 @@
 #include <fstream>
 #include <iostream>
 
-#include <absl/strings/str_cat.h>
-#include <absl/strings/str_split.h>
-#include <absl/time/clock.h>
-#include <absl/time/time.h>
+#include "absl/strings/str_cat.h"
+#include "absl/strings/str_split.h"
+#include "absl/time/clock.h"
+#include "absl/time/time.h"
 
-#include <prjxray/xilinx/architectures.h>
-#include <prjxray/xilinx/bitstream_writer.h>
-#include <prjxray/xilinx/configuration.h>
-#include <prjxray/xilinx/configuration_packet_with_payload.h>
-#include <prjxray/xilinx/nop_packet.h>
-#include <prjxray/xilinx/spartan6/command.h>
-#include <prjxray/xilinx/xc7series/command.h>
-#include <prjxray/xilinx/xc7series/configuration_options_0_value.h>
+#include "prjxray/xilinx/architectures.h"
+#include "prjxray/xilinx/bitstream_writer.h"
+#include "prjxray/xilinx/configuration.h"
+#include "prjxray/xilinx/configuration_packet_with_payload.h"
+#include "prjxray/xilinx/nop_packet.h"
+#include "prjxray/xilinx/spartan6/command.h"
+#include "prjxray/xilinx/xc7series/command.h"
+#include "prjxray/xilinx/xc7series/configuration_options_0_value.h"
 
 namespace prjxray {
 namespace xilinx {

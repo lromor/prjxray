@@ -7,7 +7,7 @@
  *
  * SPDX-License-Identifier: ISC
  */
-#include <prjxray/segbits_file_reader.h>
+#include "prjxray/segbits_file_reader.h"
 
 namespace prjxray {
 

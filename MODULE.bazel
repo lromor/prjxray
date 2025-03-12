@@ -1,0 +1,9 @@
+module(
+    name = "prjxray",
+    version = "0.0-583-t1e53270",
+)
+
+bazel_dep(name = "rules_cc", version = "0.0.16")
+bazel_dep(name = "abseil-cpp", version = "20240722.0.bcr.2")
+bazel_dep(name = "yaml-cpp", version = "0.8.0")
+bazel_dep(name = "googletest", version = "1.15.2")

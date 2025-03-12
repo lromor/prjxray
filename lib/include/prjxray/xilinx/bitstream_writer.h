@@ -19,15 +19,16 @@
 #include <fstream>
 #include <memory>
 #include <vector>
+#include <iostream>
 
-#include <absl/strings/str_cat.h>
-#include <absl/time/clock.h>
-#include <absl/time/time.h>
-#include <absl/types/optional.h>
-#include <absl/types/span.h>
+#include "absl/strings/str_cat.h"
+#include "absl/time/clock.h"
+#include "absl/time/time.h"
+#include "absl/types/optional.h"
+#include "absl/types/span.h"
 
-#include <prjxray/big_endian_span.h>
-#include <prjxray/xilinx/configuration_packet.h>
+#include "prjxray/big_endian_span.h"
+#include "prjxray/xilinx/configuration_packet.h"
 
 namespace prjxray {
 namespace xilinx {

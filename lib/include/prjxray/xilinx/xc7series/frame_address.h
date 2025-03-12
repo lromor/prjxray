@@ -13,7 +13,7 @@
 #include <cstdint>
 #include <ostream>
 
-#include <prjxray/xilinx/xc7series/block_type.h>
+#include "prjxray/xilinx/xc7series/block_type.h"
 #include <yaml-cpp/yaml.h>
 
 #ifdef _GNU_SOURCE

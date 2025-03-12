@@ -13,8 +13,8 @@
 #include <algorithm>
 #include <cassert>
 
-#include <absl/types/optional.h>
-#include <prjxray/xilinx/xc7series/frame_address.h>
+#include "absl/types/optional.h"
+#include "prjxray/xilinx/xc7series/frame_address.h"
 #include <yaml-cpp/yaml.h>
 
 namespace prjxray {

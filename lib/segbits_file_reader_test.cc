@@ -8,7 +8,7 @@
  *
  * SPDX-License-Identifier: ISC
  */
-#include <prjxray/segbits_file_reader.h>
+#include "prjxray/segbits_file_reader.h"
 
 #include <map>
 #include <string>
@@ -17,12 +17,12 @@
 
 TEST(SegbitsFileReaderTest, NonExistantFileReturnsNull) {
 	EXPECT_FALSE(
-	    prjxray::SegbitsFileReader::InitWithFile("does_not_exist"));
+	    prjxray::SegbitsFileReader::InitWithFile("lib/test_data/does_not_exist"));
 }
 
 TEST(SegbitsFileReaderTest, ZeroLengthFileYieldsNoItems) {
 	auto segbits_reader =
-	    prjxray::SegbitsFileReader::InitWithFile("empty_file");
+	    prjxray::SegbitsFileReader::InitWithFile("lib/test_data/empty_file");
 	ASSERT_TRUE(segbits_reader);
 
 	EXPECT_EQ(segbits_reader->begin(), segbits_reader->end());
@@ -30,7 +30,7 @@ TEST(SegbitsFileReaderTest, ZeroLengthFileYieldsNoItems) {
 
 TEST(SegbitsFileReaderTest, FileWithOneEntry) {
 	auto segbits_reader =
-	    prjxray::SegbitsFileReader::InitWithFile("one_entry.segbits");
+	    prjxray::SegbitsFileReader::InitWithFile("lib/test_data/one_entry.segbits");
 	ASSERT_TRUE(segbits_reader);
 
 	auto begin_iter = segbits_reader->begin();
@@ -42,7 +42,7 @@ TEST(SegbitsFileReaderTest, FileWithOneEntry) {
 
 TEST(SegbitsFileReaderTest, FileWithOneEntryWithEmptyTag) {
 	auto segbits_reader = prjxray::SegbitsFileReader::InitWithFile(
-	    "one_entry_empty_tag.segbits");
+	    "lib/test_data/one_entry_empty_tag.segbits");
 	ASSERT_TRUE(segbits_reader);
 
 	auto begin_iter = segbits_reader->begin();
@@ -54,7 +54,7 @@ TEST(SegbitsFileReaderTest, FileWithOneEntryWithEmptyTag) {
 
 TEST(SegbitsFileReaderTest, FileWithOneEntryMissingBit) {
 	auto segbits_reader = prjxray::SegbitsFileReader::InitWithFile(
-	    "one_entry_missing_bit.segbits");
+	    "lib/test_data/one_entry_missing_bit.segbits");
 	ASSERT_TRUE(segbits_reader);
 
 	auto begin_iter = segbits_reader->begin();
@@ -66,7 +66,7 @@ TEST(SegbitsFileReaderTest, FileWithOneEntryMissingBit) {
 
 TEST(SegbitsFileReaderTest, FileWithOneEntryWithExtraWhitespace) {
 	auto segbits_reader = prjxray::SegbitsFileReader::InitWithFile(
-	    "one_entry_extra_whitespace.segbits");
+	    "lib/test_data/one_entry_extra_whitespace.segbits");
 	ASSERT_TRUE(segbits_reader);
 
 	auto begin_iter = segbits_reader->begin();
@@ -78,7 +78,7 @@ TEST(SegbitsFileReaderTest, FileWithOneEntryWithExtraWhitespace) {
 
 TEST(SegbitsFileReaderTest, FileWithTwoEntries) {
 	auto segbits_reader =
-	    prjxray::SegbitsFileReader::InitWithFile("two_entries.segbits");
+	    prjxray::SegbitsFileReader::InitWithFile("lib/test_data/two_entries.segbits");
 	ASSERT_TRUE(segbits_reader);
 
 	auto iter = segbits_reader->begin();

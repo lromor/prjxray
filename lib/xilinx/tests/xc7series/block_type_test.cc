@@ -7,7 +7,7 @@
  *
  * SPDX-License-Identifier: ISC
  */
-#include <prjxray/xilinx/xc7series/block_type.h>
+#include "prjxray/xilinx/xc7series/block_type.h"
 
 #include <gtest/gtest.h>
 

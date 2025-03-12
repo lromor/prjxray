@@ -7,7 +7,7 @@
  *
  * SPDX-License-Identifier: ISC
  */
-#include <prjxray/xilinx/xc7series/crc.h>
+#include "prjxray/xilinx/xc7series/crc.h"
 
 #include <gtest/gtest.h>
 

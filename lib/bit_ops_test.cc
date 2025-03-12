@@ -7,7 +7,7 @@
  *
  * SPDX-License-Identifier: ISC
  */
-#include <prjxray/bit_ops.h>
+#include "prjxray/bit_ops.h"
 
 #include <gtest/gtest.h>
 

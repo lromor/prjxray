@@ -13,8 +13,8 @@
 #include <iterator>
 #include <memory>
 
-#include <absl/strings/string_view.h>
-#include <prjxray/memory_mapped_file.h>
+#include "absl/strings/string_view.h"
+#include "prjxray/memory_mapped_file.h"
 
 namespace prjxray {
 

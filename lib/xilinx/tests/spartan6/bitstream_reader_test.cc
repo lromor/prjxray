@@ -9,13 +9,13 @@
  */
 #include <array>
 
-#include <absl/types/span.h>
+#include "absl/types/span.h"
 #include <gtest/gtest.h>
-#include <prjxray/xilinx/bitstream_reader.h>
-#include <prjxray/xilinx/configuration_packet.h>
-#include <prjxray/xilinx/configuration_register.h>
+#include "prjxray/xilinx/bitstream_reader.h"
+#include "prjxray/xilinx/configuration_packet.h"
+#include "prjxray/xilinx/configuration_register.h"
 
-#include <prjxray/big_endian_span.h>
+#include "prjxray/big_endian_span.h"
 
 using namespace prjxray::xilinx;
 TEST(BitstreamReaderTest, InitWithEmptyBytesReturnsNull) {
@@ -77,7 +77,7 @@ TEST(BitstreamReaderTest, ParsesType1Packet) {
 TEST(BitstreamReaderTest, ParseType2PacketWithoutType1Fails) {
 	std::vector<uint8_t> bitstream{
 	    0xAA, 0x99, 0x55, 0x66,  // sync
-	    0x40, 0x00, 0x40, 0x00,  // Type 2 NOP
+	    0x40, 0x00, 0x40, 0x00, 0x40, 0x00,  // Type 2 NOP
 	};
 	auto reader = BitstreamReader<Spartan6>::InitWithBytes(bitstream);
 	ASSERT_TRUE(reader);

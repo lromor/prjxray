@@ -13,7 +13,7 @@
 #include <cassert>
 #include <iterator>
 
-#include <absl/types/span.h>
+#include "absl/types/span.h"
 
 namespace prjxray {
 

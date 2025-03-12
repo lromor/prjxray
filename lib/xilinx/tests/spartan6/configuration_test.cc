@@ -11,12 +11,12 @@
 #include <iostream>
 #include <vector>
 
-#include <absl/types/span.h>
+#include "absl/types/span.h"
 #include <gtest/gtest.h>
-#include <prjxray/memory_mapped_file.h>
-#include <prjxray/xilinx/architectures.h>
-#include <prjxray/xilinx/configuration.h>
-#include <prjxray/xilinx/spartan6/frame_address.h>
+#include "prjxray/memory_mapped_file.h"
+#include "prjxray/xilinx/architectures.h"
+#include "prjxray/xilinx/configuration.h"
+#include "prjxray/xilinx/spartan6/frame_address.h"
 #include <yaml-cpp/yaml.h>
 
 using namespace prjxray::xilinx;

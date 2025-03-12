@@ -10,10 +10,10 @@
 #include <array>
 
 #include <gtest/gtest.h>
-#include <prjxray/xilinx/architectures.h>
-#include <prjxray/xilinx/bitstream_reader.h>
-#include <prjxray/xilinx/configuration_packet.h>
-#include <prjxray/xilinx/configuration_register.h>
+#include "prjxray/xilinx/architectures.h"
+#include "prjxray/xilinx/bitstream_reader.h"
+#include "prjxray/xilinx/configuration_packet.h"
+#include "prjxray/xilinx/configuration_register.h"
 
 using namespace prjxray::xilinx;
 

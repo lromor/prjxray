@@ -10,15 +10,15 @@
 #ifndef PRJXRAY_LIB_XILINX_ARCHITECTURES_H_
 #define PRJXRAY_LIB_XILINX_ARCHITECTURES_H_
 
-#include <absl/types/variant.h>
+#include "absl/types/variant.h"
 #include <memory>
 #include <vector>
 
-#include <prjxray/xilinx/configuration_packet.h>
-#include <prjxray/xilinx/spartan6/frame_address.h>
-#include <prjxray/xilinx/spartan6/part.h>
-#include <prjxray/xilinx/xc7series/frame_address.h>
-#include <prjxray/xilinx/xc7series/part.h>
+#include "prjxray/xilinx/configuration_packet.h"
+#include "prjxray/xilinx/spartan6/frame_address.h"
+#include "prjxray/xilinx/spartan6/part.h"
+#include "prjxray/xilinx/xc7series/frame_address.h"
+#include "prjxray/xilinx/xc7series/part.h"
 
 namespace prjxray {
 namespace xilinx {

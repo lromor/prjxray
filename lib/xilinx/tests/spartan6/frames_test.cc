@@ -11,8 +11,8 @@
 
 #include <gtest/gtest.h>
 
-#include <prjxray/xilinx/frames.h>
-#include <prjxray/xilinx/spartan6/part.h>
+#include "prjxray/xilinx/frames.h"
+#include "prjxray/xilinx/spartan6/part.h"
 
 using namespace prjxray::xilinx;
 TEST(FramesTest, FillInMissingFrames) {

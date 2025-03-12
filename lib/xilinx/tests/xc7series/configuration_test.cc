@@ -11,15 +11,15 @@
 #include <iostream>
 #include <vector>
 
-#include <absl/types/span.h>
+#include "absl/types/span.h"
 #include <gtest/gtest.h>
-#include <prjxray/memory_mapped_file.h>
-#include <prjxray/xilinx/architectures.h>
-#include <prjxray/xilinx/bitstream_reader.h>
-#include <prjxray/xilinx/configuration.h>
-#include <prjxray/xilinx/configuration_packet.h>
-#include <prjxray/xilinx/configuration_register.h>
-#include <prjxray/xilinx/frames.h>
+#include "prjxray/memory_mapped_file.h"
+#include "prjxray/xilinx/architectures.h"
+#include "prjxray/xilinx/bitstream_reader.h"
+#include "prjxray/xilinx/configuration.h"
+#include "prjxray/xilinx/configuration_packet.h"
+#include "prjxray/xilinx/configuration_register.h"
+#include "prjxray/xilinx/frames.h"
 #include <yaml-cpp/yaml.h>
 
 using namespace prjxray::xilinx;
@@ -131,11 +131,11 @@ TEST(ConfigurationTest, ConstructFromPacketsWithAutoincrement) {
 
 TEST(ConfigurationTest,
      DebugAndPerFrameCrcBitstreamsProduceEqualConfigurations) {
-	auto part = xc7series::Part::FromFile("configuration_test.yaml");
+	auto part = xc7series::Part::FromFile("lib/test_data/configuration_test.yaml");
 	ASSERT_TRUE(part);
 
 	auto debug_bitstream = prjxray::MemoryMappedFile::InitWithFile(
-	    "configuration_test.debug.bit");
+	    "lib/test_data/configuration_test.debug.bit");
 	ASSERT_TRUE(debug_bitstream);
 
 	auto debug_reader = BitstreamReader<Series7>::InitWithBytes(
@@ -147,7 +147,7 @@ TEST(ConfigurationTest,
 	ASSERT_TRUE(debug_configuration);
 
 	auto perframecrc_bitstream = prjxray::MemoryMappedFile::InitWithFile(
-	    "configuration_test.perframecrc.bit");
+	    "lib/test_data/configuration_test.perframecrc.bit");
 	ASSERT_TRUE(perframecrc_bitstream);
 
 	auto perframecrc_reader = BitstreamReader<Series7>::InitWithBytes(
@@ -187,11 +187,11 @@ TEST(ConfigurationTest,
 }
 
 TEST(ConfigurationTest, DebugAndNormalBitstreamsProduceEqualConfigurations) {
-	auto part = xc7series::Part::FromFile("configuration_test.yaml");
+	auto part = xc7series::Part::FromFile("lib/test_data/configuration_test.yaml");
 	ASSERT_TRUE(part);
 
 	auto debug_bitstream = prjxray::MemoryMappedFile::InitWithFile(
-	    "configuration_test.debug.bit");
+	    "lib/test_data/configuration_test.debug.bit");
 	ASSERT_TRUE(debug_bitstream);
 
 	auto debug_reader = BitstreamReader<Series7>::InitWithBytes(
@@ -203,7 +203,7 @@ TEST(ConfigurationTest, DebugAndNormalBitstreamsProduceEqualConfigurations) {
 	ASSERT_TRUE(debug_configuration);
 
 	auto normal_bitstream =
-	    prjxray::MemoryMappedFile::InitWithFile("configuration_test.bit");
+	    prjxray::MemoryMappedFile::InitWithFile("lib/test_data/configuration_test.bit");
 	ASSERT_TRUE(normal_bitstream);
 
 	auto normal_reader = BitstreamReader<Series7>::InitWithBytes(

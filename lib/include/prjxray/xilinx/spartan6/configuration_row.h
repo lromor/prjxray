@@ -15,10 +15,10 @@
 #include <map>
 #include <memory>
 
-#include <absl/types/optional.h>
-#include <prjxray/xilinx/spartan6/block_type.h>
-#include <prjxray/xilinx/spartan6/configuration_bus.h>
-#include <prjxray/xilinx/spartan6/frame_address.h>
+#include "absl/types/optional.h"
+#include "prjxray/xilinx/spartan6/block_type.h"
+#include "prjxray/xilinx/spartan6/configuration_bus.h"
+#include "prjxray/xilinx/spartan6/frame_address.h"
 #include <yaml-cpp/yaml.h>
 
 namespace prjxray {

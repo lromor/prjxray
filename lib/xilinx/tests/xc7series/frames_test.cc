@@ -11,9 +11,9 @@
 
 #include <gtest/gtest.h>
 
-#include <prjxray/xilinx/architectures.h>
-#include <prjxray/xilinx/frames.h>
-#include <prjxray/xilinx/xc7series/part.h>
+#include "prjxray/xilinx/architectures.h"
+#include "prjxray/xilinx/frames.h"
+#include "prjxray/xilinx/xc7series/part.h"
 
 using namespace prjxray::xilinx;
 

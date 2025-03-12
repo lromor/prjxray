@@ -7,7 +7,7 @@
  *
  * SPDX-License-Identifier: ISC
  */
-#include <prjxray/xilinx/spartan6/part.h>
+#include "prjxray/xilinx/spartan6/part.h"
 
 #include <gtest/gtest.h>
 

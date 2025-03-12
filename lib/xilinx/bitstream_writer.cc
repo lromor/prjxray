@@ -9,9 +9,9 @@
  */
 #include <iostream>
 
-#include <prjxray/bit_ops.h>
-#include <prjxray/xilinx/architectures.h>
-#include <prjxray/xilinx/bitstream_writer.h>
+#include "prjxray/bit_ops.h"
+#include "prjxray/xilinx/architectures.h"
+#include "prjxray/xilinx/bitstream_writer.h"
 
 namespace prjxray {
 namespace xilinx {

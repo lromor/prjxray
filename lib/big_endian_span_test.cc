@@ -7,7 +7,7 @@
  *
  * SPDX-License-Identifier: ISC
  */
-#include <prjxray/big_endian_span.h>
+#include "prjxray/big_endian_span.h"
 
 #include <cstdint>
 #include <vector>

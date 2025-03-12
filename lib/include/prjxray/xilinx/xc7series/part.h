@@ -16,8 +16,8 @@
 #include <string>
 #include <vector>
 
-#include <absl/types/optional.h>
-#include <prjxray/xilinx/xc7series/global_clock_region.h>
+#include "absl/types/optional.h"
+#include "prjxray/xilinx/xc7series/global_clock_region.h"
 #include <yaml-cpp/yaml.h>
 
 namespace prjxray {

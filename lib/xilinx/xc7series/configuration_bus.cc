@@ -7,7 +7,7 @@
  *
  * SPDX-License-Identifier: ISC
  */
-#include <prjxray/xilinx/xc7series/configuration_bus.h>
+#include "prjxray/xilinx/xc7series/configuration_bus.h"
 
 #include <iostream>
 

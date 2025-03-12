@@ -15,11 +15,11 @@
 #include <memory>
 #include <vector>
 
-#include <absl/types/span.h>
+#include "absl/types/span.h"
 
-#include <prjxray/big_endian_span.h>
-#include <prjxray/xilinx/architectures.h>
-#include <prjxray/xilinx/configuration_packet.h>
+#include "prjxray/big_endian_span.h"
+#include "prjxray/xilinx/architectures.h"
+#include "prjxray/xilinx/configuration_packet.h"
 
 namespace prjxray {
 namespace xilinx {

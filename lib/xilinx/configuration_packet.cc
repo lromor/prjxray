@@ -7,13 +7,13 @@
  *
  * SPDX-License-Identifier: ISC
  */
-#include <prjxray/xilinx/configuration_packet.h>
+#include "prjxray/xilinx/configuration_packet.h"
 
 #include <iomanip>
 #include <iostream>
 #include <ostream>
 
-#include <prjxray/bit_ops.h>
+#include "prjxray/bit_ops.h"
 
 namespace prjxray {
 namespace xilinx {

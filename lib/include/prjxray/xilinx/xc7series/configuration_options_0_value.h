@@ -10,9 +10,9 @@
 #ifndef PRJXRAY_LIB_XILINX_XC7SERIES_CONFIGURATION_OPTIONS_0_VALUE_H
 #define PRJXRAY_LIB_XILINX_XC7SERIES_CONFIGURATION_OPTIONS_0_VALUE_H
 
-#include <prjxray/bit_ops.h>
-#include <prjxray/xilinx/configuration_packet.h>
-#include <prjxray/xilinx/configuration_register.h>
+#include "prjxray/bit_ops.h"
+#include "prjxray/xilinx/configuration_packet.h"
+#include "prjxray/xilinx/configuration_register.h"
 
 namespace prjxray {
 namespace xilinx {

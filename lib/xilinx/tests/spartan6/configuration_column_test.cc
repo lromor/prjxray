@@ -7,11 +7,11 @@
  *
  * SPDX-License-Identifier: ISC
  */
-#include <prjxray/xilinx/spartan6/configuration_column.h>
+#include "prjxray/xilinx/spartan6/configuration_column.h"
 
 #include <gtest/gtest.h>
-#include <prjxray/xilinx/spartan6/block_type.h>
-#include <prjxray/xilinx/spartan6/frame_address.h>
+#include "prjxray/xilinx/spartan6/block_type.h"
+#include "prjxray/xilinx/spartan6/frame_address.h"
 #include <yaml-cpp/yaml.h>
 
 using namespace prjxray::xilinx;

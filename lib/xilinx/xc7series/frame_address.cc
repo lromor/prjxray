@@ -7,11 +7,11 @@
  *
  * SPDX-License-Identifier: ISC
  */
-#include <prjxray/xilinx/xc7series/frame_address.h>
+#include "prjxray/xilinx/xc7series/frame_address.h"
 
 #include <iomanip>
 
-#include <prjxray/bit_ops.h>
+#include "prjxray/bit_ops.h"
 
 namespace prjxray {
 namespace xilinx {
