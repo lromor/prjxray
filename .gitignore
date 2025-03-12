@@ -1,3 +1,7 @@
+MODULE.bazel.lock
+.direnv
+.envrc
+bazel-*
 env
 build
 build_*
